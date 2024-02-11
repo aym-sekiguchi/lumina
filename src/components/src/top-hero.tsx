@@ -10,7 +10,7 @@ export function TopHero() {
 			<div className='aspect-[4/3] w-full p-4 md:h-[100vh] md:p-8'>
 				<div
 					className='h-full w-full bg-cover bg-center bg-no-repeat backdrop-blur-lg'
-					style={{ backgroundImage: 'url(./images/hero.webp)' }}
+					style={{ backgroundImage: 'url(/images/hero.webp)' }}
 				>
 					<div className='mx-auto h-full w-full max-w-7xl'>
 						<motion.div

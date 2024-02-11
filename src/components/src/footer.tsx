@@ -5,7 +5,7 @@ export function Footer() {
 	return (
 		<footer
 			className='flex justify-center bg-cover bg-left bg-no-repeat'
-			style={{ backgroundImage: 'url(./images/footer-bg.webp)' }}
+			style={{ backgroundImage: 'url(/images/footer-bg.webp)' }}
 		>
 			<div className='flex h-full flex-col items-center justify-between gap-40 bg-white/70 p-10'>
 				<div className='flex flex-col items-center gap-8'>
@@ -25,7 +25,9 @@ export function Footer() {
 							<ul className='flex items-center gap-8'>
 								{['TOP', 'SHOP', 'MENU'].map((item, index) => (
 									<li className='group relative text-xl' key={`nav-${index}`}>
-										<Link className='cinzel' href={item === 'TOP' ? '/' : item.toLowerCase()}>{item}</Link>
+										<Link className='cinzel' href={item === 'TOP' ? '/' : item.toLowerCase()}>
+											{item}
+										</Link>
 										<span className='absolute inset-x-0 bottom-0 m-auto block h-px w-full origin-center scale-0 bg-primary transition duration-500 group-hover:scale-100'></span>
 									</li>
 								))}
