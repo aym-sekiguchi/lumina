@@ -1,0 +1,6 @@
+// export { ___ } from './src/___'
+export { Centering } from './src/centering'
+export { Footer } from './src/footer'
+export { Header } from './src/header'
+export { Hero } from './src/hero'
+export { SectionTitle } from './src/sectionTitle'
